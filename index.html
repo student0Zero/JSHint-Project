@@ -18,11 +18,14 @@
                 <h2>JSHinterface</h2>
             </div>
             <div class="col-md-2 text-end">
+                <!-- to check status of api key -->
                 <button id="status" class="btn btn-secondary">Check Key</button>
             </div>
         </div>
         <div class="row">
-            <div class="col"><hr></div>
+            <div class="col">
+                <hr>
+            </div>
         </div>
         <div class="row">
             <div class="col">
@@ -30,14 +33,17 @@
                     <div class="row mb-3">
                         <label for="filename" class="col-2 form-label">Filename:</label>
                         <div class="col-6">
-                            <input class="form-control" aria-describedby="fileHelp" placeholder="Enter filename" id="filename" name="filename" type="text">
-                            <small id="fileHelp" class="form-text">Mandatory if you are pasting code, but not used if you enter a URL.</small>
+                            <input class="form-control" aria-describedby="fileHelp" placeholder="Enter filename"
+                                id="filename" name="filename" type="text">
+                            <small id="fileHelp" class="form-text">Mandatory if you are pasting code, but not used if
+                                you enter a URL.</small>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <label for="url" class="col-2 form-label">URL:</label>
                         <div class="col-6">
-                            <input class="form-control" aria-describedby="urlHelp" placeholder="Enter URL" id="url" name="url" type="url">
+                            <input class="form-control" aria-describedby="urlHelp" placeholder="Enter URL" id="url"
+                                name="url" type="url">
                             <small id="urlHelp" class="form-text">Enter a URL or paste JavaScript content below.</small>
                         </div>
                     </div>
@@ -77,6 +83,7 @@
                         </div>
                     </div>
                 </form>
+                <!-- trigger running the tests -->
                 <button class="btn btn-primary text-start" id="submit">Run Checks</button>
             </div>
         </div>
@@ -93,6 +100,7 @@
                 <div class="modal-body" id="results-content">
                 </div>
                 <div class="modal-footer">
+                    <!-- trigger from js after populating with results from query -->
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
